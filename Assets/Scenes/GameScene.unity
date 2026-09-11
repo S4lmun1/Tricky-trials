@@ -1177,6 +1177,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2974956476268531124, guid: 30dc9450acddf7f49a57e98546ca4908, type: 3}
   m_PrefabInstance: {fileID: 1958859894}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1076922826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076922828}
+  - component: {fileID: 1076922827}
+  m_Layer: 0
+  m_Name: WeaponManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1076922827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076922826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbd493b96b9650448496c7972fe549d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponManager
+  weapons:
+  - weaponName: Fists
+    weaponObject: {fileID: 0}
+    icon: {fileID: 0}
+  - weaponName: Gun
+    weaponObject: {fileID: 1094008564}
+    icon: {fileID: 0}
+  currentWeaponIndex: 0
+--- !u!4 &1076922828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076922826}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 358.39407, y: 770.64935, z: 406.46844}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094008564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,7 +1787,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825533449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c831b5c7655151349ab5b1c4b0ae3cc0, type: 3}
   m_Name: 
@@ -2217,3 +2269,4 @@ SceneRoots:
   - {fileID: 1910793774}
   - {fileID: 1921764670}
   - {fileID: 1825533451}
+  - {fileID: 1076922828}
